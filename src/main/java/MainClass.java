@@ -2,11 +2,14 @@ import com.google.gson.GsonBuilder;
 
 import java.security.Security;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MainClass {
 
     public static ArrayList<Block> blockchain = new ArrayList<>();
     public static int difficulty = 5;
+
+    public static HashMap<String, TransactionOutput> UTXOs = new HashMap<>(); // list of all unspent transactions
 
     public static Wallet walletA;
     public static Wallet walletB;
